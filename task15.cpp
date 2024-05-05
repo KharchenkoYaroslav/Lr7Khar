@@ -42,13 +42,13 @@ coord coord::operator-(const coord &obj) {
 }
 
 coord coord::operator<<(const int i) {
-    x = x - i;
+    x = x - i; // можливо я трохи не правильно поняв і треба було x / pow(10, i)
     y = y - i;
     return *this;
 }
 
 coord coord::operator>>(const int i) {
-    x = x + i;
+    x = x + i;// можливо я трохи не правильно поняв і треба було x * pow(10, i)
     y = y + i;
     return *this;
 }
